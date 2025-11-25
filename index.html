@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz--App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container" id="maincontainer">
+        <div class="box1">
+            <h1>Quiz--App</h1>
+            
+            <div class="input" id="input">
+                <input type="text" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="input1" id="input1">
+                <input type="text" id="fatherName" placeholder="Enter Your Father Name">
+            </div>
+
+            <div class="input2" id="input2">
+                <input type="text" id="rollNumber" placeholder="Enter Your Roll:Number">
+            </div>
+
+            <div class="btn1" id="btn1">
+                <button id="btn1" onclick="submit()">Submit</button>
+           
+            </div>
+        </div>
+    </div>
+
+
+
+    
+<div class="quiz-container" id="quizapp">
+    <h2 id="question">Loading...</h2>
+
+    <div class="options">
+        <button class="option" onclick="checkAnswer(0)"></button>
+        <button class="option" onclick="checkAnswer(1)"></button>
+        <button class="option" onclick="checkAnswer(2)"></button>
+        <button class="option" onclick="checkAnswer(3)"></button>
+    </div>
+
+    <div class="bottom">
+        <p id="score"></p>
+        <button id="nextBtn" onclick="nextQuestion()">Next</button>
+    </div>
+
+    </div>
+</body>
+
+<script src="aq.js"></script>
+</html>
